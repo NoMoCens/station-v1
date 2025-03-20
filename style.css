@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    --A1: #25214a;
+    --A2: #312c62;
+    --A3: #3e387b;
+    --NM1: #1A1A1A;
+    --NM2: #242424;
+    --NM3: #2E2E2E;
+    --NM4: #383838;
+    --NM5: #444444;
+    --NM6: #5C5C5C;
+    --NM7: #787878;
+    --F-Ubuntu: 'Ubuntu';
+    --F-Lato: 'Lato';
+    --F-UbuntuTitlingBold: 'Ubuntu Titling Bold';
+}
+
+* {
+    user-select: none;
+    cursor: auto;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--NM2);
+    color: white;
+}
+
+.menu {
+    background-color: var(--A1);
+    padding: 0.75%;
+    border: 1px solid var(--NM1);
+    border-radius: 8px;
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu ul li {
+    font-family: var(--F-Lato);
+    font-size: medium;
+    margin-right: 0.75%;
+    background-color: var(--A2);
+    padding: 1% 2%;
+    border: 1px solid var(--NM1);
+    border-radius: 6px;
+    transition: 0.2s ease-in;
+}
+
+.menu ul li:hover {
+    background-color: var(--A3);
+    transition: 0.2s ease-out;
+}
+
+.menu ul li a, .menu ul li, .menu ul li a:visited, .menu ul li a:hover, .menu ul li a:active {
+    text-decoration: none;
+    font-weight: normal;
+    color: white;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+}
+
+.search input {
+    font-family: var(--F-Lato);
+    font-size: medium;
+    background-color: var(--A2);
+    padding: 1% 2%;
+    border: 1px solid var(--NM1);
+    border-radius: 6px;
+    color: white;
+    outline: none;
+    width: 40%;
+    transition: 0.2s ease-in;
+}
+
+.search input::placeholder {
+    color: white;
+}
+
+.search input:hover {
+    background-color: var(--A3);
+    transition: 0.2s ease-out;
+}
+
+.page {
+    background-color: var(--A1);
+    padding: 1% 2%;
+    border: 1px solid var(--NM1);
+    border-radius: 10px;
+    margin-top: 2%;
+}
+
+.list {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2%;
+    flex-wrap: wrap;
+}
+
+.list .itemexample {
+    margin: 2%;
+    background-color: var(--A2);
+    padding: 0.55%;
+    border: 3px solid var(--NM1);
+    border-radius: 10px;
+}
+
+.list .itemexample:hover {
+    border: 3px solid white;
+    transition: 0.35s ease;
+    background-color: var(--A3);
+}
+
+.list .itemexample img {
+    border: 3px solid var(--NM1);
+    border-radius: 24px;
+    transition: 0.35s ease;
+    pointer-events: none;
+}
+
+.list .itemexample p {
+    text-align: center;
+    font-size: x-large;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bolder;
+}
+
+.title img {
+    display: block;
+}
