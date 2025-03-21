@@ -1,6 +1,14 @@
 [
-    ["Example Game 1", "appdirectory1", "https://placehold.co/256x256/096990/909609/png?text=Example+Game+1"],
-    ["Example Game 2", "appdirectory2", "https://placehold.co/256x256/909609/096990/png?text=Example+Game+2"],
-    ["Example Game 3", "appdirectory1", "https://placehold.co/256x256/f6966f/6f69f6/png?text=Example+Game+3"],
-    ["Example Game 4", "appdirectory2", "https://placehold.co/256x256/6f69f6/f6966f/png?text=Example+Game+4"]
+    ["Baldis Basics", "https://nomocens.github.io/station-selection-1/baldis-basics/index.html", "https://nomocens.github.io/station-selection-1/baldis-basics/thumbnail.png"],
+    ["BitLife", "https://nomocens.github.io/station-selection-1/BitLife/index.html", "https://nomocens.github.io/station-selection-1/BitLife/thumbnail.png"],
+    ["FNaW", "https://nomocens.github.io/station-selection-1/fnaw/index.html", "https://nomocens.github.io/station-selection-1/fnaw/thumbnail.png"],
+    ["Happy Wheels", "https://nomocens.github.io/station-selection-1/happywheels/index.html", "https://nomocens.github.io/station-selection-1/happywheels/thumbnail.png"],
+    ["Mini Putt", "https://nomocens.github.io/station-selection-1/miniputt/index.html", "https://nomocens.github.io/station-selection-1/miniputt/thumbnail.png"],
+    ["SM64", "https://nomocens.github.io/station-selection-1/sm64/index.html", "https://nomocens.github.io/station-selection-1/sm64/thumbnail.png"],
+    ["Stickman Hook", "https://nomocens.github.io/station-selection-1/stickman-hook/index.html", "https://nomocens.github.io/station-selection-1/thumbnail.png"],
+    ["Subway Surfers", "https://nomocens.github.io/station-selection-1/subway-surfers/index.html", "https://nomocens.github.io/station-selection-1/subway-surfers/thumbnail.png"],
+    ["Super Hot", "https://nomocens.github.io/station-selection-1/superhot/index.html", "https://nomocens.github.io/station-selection-1/superhot/thumbnail.png"],
+    ["Wordle Unlimited", "https://nomocens.github.io/station-selection-1/wordle-unlimited/index.html", "https://nomocens.github.io/station-selection-1/wordle-unlimited/thumbnail.png"]
 ]
+
+// https://nomocens.github.io/station-selection-1/
