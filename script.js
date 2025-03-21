@@ -46,7 +46,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
             if (pElement) {
                 let loc = pElement.getAttribute("loc");
                 let formatted = atob(loc);
-                window.location.href = formatted;
+                // window.location.href = formatted;
+                window.open(formated, '_blank');
             } else {
                 console.warn("No <p> found in clicked item", item);
             }
