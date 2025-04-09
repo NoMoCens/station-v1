@@ -193,23 +193,9 @@ if (loada){
     <script type='text/javascript'>
     EJS_player = '#activity';
     
-    // Can also be snes9x
-    EJS_core = 'snes';
-    
-    //SNES mouse
-    EJS_mouse = false; 
-    
-    // SNES Multitap
-    EJS_multitap = false; 
-    
-    // URL to BIOS file
-    EJS_biosUrl = '';
-    
-    // URL to Game rom
-    EJS_gameUrl = "2020.sfc";
-    
-    // Path to the data directory
-    EJS_pathtodata = 'loaderdata/';
+        EJS_core = "snes";
+        EJS_pathtodata = "loaderdata/";
+        EJS_gameUrl = "2020.zip";
 </script>
 <script src='loaderdata/loader.js'></script>
     `
