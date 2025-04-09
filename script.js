@@ -125,4 +125,43 @@ document.addEventListener("DOMContentLoaded", (event) => {
             });
         })
         .catch(error => console.error("Error loading JSON:", error));
+
+        const setcolor = document.getElementById("setcolor");
+
+if (setcolor) {
+    setcolor.addEventListener('input', function () {
+        let hex = setcolor.value.replace("#", "");
+    
+        // Handle shorthand hex codes (e.g., "abc")
+        if (hex.length === 3) {
+            hex = hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2];
+        }
+    
+        if (hex.length !== 6) return; // Invalid input
+    
+        // Parse the hex values for red, green, and blue
+        var set_r = parseInt(hex.substring(0, 2), 16);
+        var set_g = parseInt(hex.substring(2, 4), 16);
+        var set_b = parseInt(hex.substring(4, 6), 16);
+
+        localStorage.setItem('seta1', `rgb(${set_r}, ${set_g}, ${set_b})`);
+        localStorage.setItem('seta2', `rgb(${set_r + 12}, ${set_g + 11}, ${set_b + 24})`);
+        localStorage.setItem('seta3', `rgb(${set_r + 25}, ${set_g + 23}, ${set_b + 49})`);
+
+        setaccents();
+    });
+}
+
+if (localStorage.getItem('seta1') && localStorage.getItem('seta2') && localStorage.getItem('seta3')){
+
+    document.documentElement.style.setProperty('--A1', localStorage.getItem('seta1'));
+    document.documentElement.style.setProperty('--A2', localStorage.getItem('seta2'));
+    document.documentElement.style.setProperty('--A3', localStorage.getItem('seta3'));
+}
+
+function setaccents(){
+    document.documentElement.style.setProperty('--A1', localStorage.getItem('seta1'));
+    document.documentElement.style.setProperty('--A2', localStorage.getItem('seta2'));
+    document.documentElement.style.setProperty('--A3', localStorage.getItem('seta3'));
+}
 });
