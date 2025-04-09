@@ -164,4 +164,54 @@ function setaccents(){
     document.documentElement.style.setProperty('--A2', localStorage.getItem('seta2'));
     document.documentElement.style.setProperty('--A3', localStorage.getItem('seta3'));
 }
+
+const removecolor = document.getElementById("removecolor");
+
+if (removecolor){
+    removecolor.addEventListener('click', function(){
+        if (localStorage.getItem('seta1') && localStorage.getItem('seta2') && localStorage.getItem('seta3')){
+            localStorage.removeItem('seta1');
+            localStorage.removeItem('seta1');
+            localStorage.removeItem('seta1');
+            alert("Color removed, changes will be shown on refresh")
+        }
+
+    })
+}
+
+const loada = document.getElementById("loada");
+
+const params = new URLSearchParams(window.location.search);
+const loadstring = params.get("load");
+
+if (loada){
+    loada.innerHTML = `
+    <div style='width:640px;height:480px;max-width:100%'>
+        <div id='activity'></div>
+    </div>
+
+    <script type='text/javascript'>
+    EJS_player = '#activity';
+    
+    // Can also be snes9x
+    EJS_core = 'snes';
+    
+    //SNES mouse
+    EJS_mouse = false; 
+    
+    // SNES Multitap
+    EJS_multitap = false; 
+    
+    // URL to BIOS file
+    EJS_biosUrl = '';
+    
+    // URL to Game rom
+    EJS_gameUrl = "2020.sfc";
+    
+    // Path to the data directory
+    EJS_pathtodata = 'loaderdata/';
+</script>
+<script src='loaderdata/loader.js'></script>
+    `
+}
 });
