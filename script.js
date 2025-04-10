@@ -92,12 +92,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
     
 
-
+    var act_counter = 0;
+    var counter_display = document.getElementById("display_counter")
 
     fetch("data.json")
         .then(response => response.json())
         .then(data => {
             data.forEach(item => {
+                act_counter += 1;
                 const [appName, appDirectory, logo] = item;
 
                 // Encode the appDirectory using btoa()
@@ -122,6 +124,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
                 // Append the new item to the list
                 listContainer.appendChild(itemDiv);
+
+                if (counter_display){
+                    counter_display.innerText = act_counter;
+                }
             });
         })
         .catch(error => console.error("Error loading JSON:", error));
