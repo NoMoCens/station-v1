@@ -69,11 +69,31 @@ document.addEventListener("DOMContentLoaded", (event) => {
     
         if (item) {
             const pElement = item.querySelector("p");
+    
             if (pElement) {
                 let loc = pElement.getAttribute("loc");
-                let formatted = atob(loc);
-                window.location.href = formatted;
-                // window.open(formatted, '_blank');
+    
+                // Check if loc is "I0Va"
+                if (loc === "I0Va") {
+                    const cr = prompt("Pick your chat room id, share this with others to chat together.");
+    
+                    if (cr) {
+                        const EZCHATTA = "aHR0cHM6Ly83eC0wMzhjbS5yYzcud29ya2Vycy5kZXYv"
+                        window.location.href = atob(EZCHATTA) + "/" + cr
+                    } else {
+                        alert("No chat room id set.");
+                    }
+                } else {
+                    // Decode loc and navigate to the decoded URL
+                    try {
+                        let formatted = atob(loc);
+                        window.location.href = formatted;
+                        // window.open(formatted, '_blank');  // Uncomment if you prefer opening in a new tab
+                    } catch (e) {
+                        // Handle the case where atob fails (invalid base64)
+                        alert("An error occurred while decoding the location.");
+                    }
+                }
             } else {
                 console.warn("No <p> found in clicked item", item);
             }
@@ -86,7 +106,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
         // Check if the clicked element has the class "itemexample"
         const item = event.target.closest(".itemexample");
-    
+        
         function _0x201e(_0x33d119,_0x20b3a2){const _0x5ea888=_0x5ea8();return _0x201e=function(_0x201e9,_0x313024){_0x201e9=_0x201e9-0x86;let _0xa25ca9=_0x5ea888[_0x201e9];return _0xa25ca9;},_0x201e(_0x33d119,_0x20b3a2);}function _0x5ea8(){const _0x3f70b7=['200NUoHqa','appendChild','loc','height','none','querySelector','_blank','66AkgRMB','open','warn','border','4848TTaFPV','Popup\x20blocked\x20or\x20failed\x20to\x20open.','error','body','818650AFOCcG','style','100%','Error:\x20Unable\x20to\x20open\x20new\x20window.','1148038KFRBTS','335531YdAWsr','8666148yoPrUU','margin','4131028DtqGEC','6985BmFdlf','3yuuAyC','document','100vh','3iuUnFJ','15643764TmFOYt','getAttribute'];_0x5ea8=function(){return _0x3f70b7;};return _0x5ea8();}const _0x14ecc5=_0x201e;(function(_0x3bf885,_0x556974){const _0x5dbb89=_0x201e,_0x27826c=_0x3bf885();while(!![]){try{const _0x1c84d6=-parseInt(_0x5dbb89(0x86))/0x1*(parseInt(_0x5dbb89(0x9c))/0x2)+parseInt(_0x5dbb89(0xa2))/0x3*(-parseInt(_0x5dbb89(0xa0))/0x4)+-parseInt(_0x5dbb89(0xa1))/0x5*(parseInt(_0x5dbb89(0x94))/0x6)+parseInt(_0x5dbb89(0x9d))/0x7*(-parseInt(_0x5dbb89(0x89))/0x8)+parseInt(_0x5dbb89(0x87))/0x9+-parseInt(_0x5dbb89(0x98))/0xa+parseInt(_0x5dbb89(0x90))/0xb*(parseInt(_0x5dbb89(0x9e))/0xc);if(_0x1c84d6===_0x556974)break;else _0x27826c['push'](_0x27826c['shift']());}catch(_0x525fd7){_0x27826c['push'](_0x27826c['shift']());}}}(_0x5ea8,0xdd8e2));if(item){const pElement=item[_0x14ecc5(0x8e)]('p');if(pElement){let loc=pElement[_0x14ecc5(0x88)](_0x14ecc5(0x8b)),formatted=atob(loc),openurl=formatted;const win=window[_0x14ecc5(0x91)]('about:blank',_0x14ecc5(0x8f));if(win){win[_0x14ecc5(0xa3)]['body'][_0x14ecc5(0x99)][_0x14ecc5(0x9f)]='0',win[_0x14ecc5(0xa3)][_0x14ecc5(0x97)][_0x14ecc5(0x99)][_0x14ecc5(0x8c)]=_0x14ecc5(0xa4);const iframe=win[_0x14ecc5(0xa3)]['createElement']('iframe');iframe[_0x14ecc5(0x99)][_0x14ecc5(0x93)]=_0x14ecc5(0x8d),iframe[_0x14ecc5(0x99)]['width']='100%',iframe[_0x14ecc5(0x99)]['height']=_0x14ecc5(0x9a),iframe[_0x14ecc5(0x99)][_0x14ecc5(0x9f)]='0',iframe['src']=openurl,win[_0x14ecc5(0xa3)]['body'][_0x14ecc5(0x8a)](iframe);}else console[_0x14ecc5(0x96)](_0x14ecc5(0x95)),alert(_0x14ecc5(0x9b));}else console[_0x14ecc5(0x92)]('No\x20<p>\x20found\x20in\x20clicked\x20item',item);}
 
     });
