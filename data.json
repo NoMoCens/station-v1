@@ -1,4 +1,5 @@
 [
+    ["Handshakes", "https://nomocens.github.io/station-selection-10/Handshakes/index.html", "https://nomocens.github.io/station-selection-10/Handshakes/thumbnail.png"],
     ["Basketball King", "https://nomocens.github.io/station-selection-10/BasketballKing/index.html", "https://nomocens.github.io/station-selection-10/BasketballKing/thumbnail.png"],
     ["FPS Strike", "https://nomocens.github.io/station-selection-10/FPSStrike/index.html", "https://nomocens.github.io/station-selection-10/FPSStrike/thumbnail.png"],
     ["Granny", "https://nomocens.github.io/station-selection-10/Granny/index.html", "https://nomocens.github.io/station-selection-10/Granny/thumbnail.png"],
@@ -74,8 +75,6 @@
     ["meme2048", "https://nomocens.github.io/station-selection-4/meme2048/index.html", "https://nomocens.github.io/station-selection-4/meme2048/thumbnail.png"],
     ["minesweeper", "https://nomocens.github.io/station-selection-4/minesweeper/index.html", "https://nomocens.github.io/station-selection-4/minesweeper/thumbnail.png"],
     ["missiles", "https://nomocens.github.io/station-selection-4/missiles/index.html", "https://nomocens.github.io/station-selection-4/missiles/thumbnail.png"],
-    // ["MC152", "https://nomocens.github.io/station-selection-5/MC152/index.html", "https://nomocens.github.io/station-selection-5/MC152/thumbnail.png"],
-    // ["MC18", "https://nomocens.github.io/station-selection-5/MC18/index.html", "https://nomocens.github.io/station-selection-5/MC18/thumbnail.png"],
     ["MCB", "https://nomocens.github.io/station-selection-5/MCB/index.html", "https://nomocens.github.io/station-selection-5/MCB/thumbnail.png"],
     ["MCC", "https://nomocens.github.io/station-selection-5/MCC/index.html", "https://nomocens.github.io/station-selection-5/MCC/thumbnail.png"],
     ["minecraft", "https://nomocens.github.io/station-selection-5/minecraft/index.html", "https://nomocens.github.io/station-selection-5/minecraft/thumbnail.png"],
@@ -94,7 +93,6 @@
     ["particle-clicker", "https://nomocens.github.io/station-selection-6/particle-clicker/index.html", "https://nomocens.github.io/station-selection-6/particle-clicker/thumbnail.png"],
     ["polybranch", "https://nomocens.github.io/station-selection-6/polybranch/index.html", "https://nomocens.github.io/station-selection-6/polybranch/thumbnail.png"],
     ["portalflash", "https://nomocens.github.io/station-selection-6/portalflash/index.html", "https://nomocens.github.io/station-selection-6/portalflash/thumbnail.png"],
-    // ["precision-client", "https://nomocens.github.io/station-selection-6/precision-client/index.html", "https://nomocens.github.io/station-selection-6/precision-client/thumbnail.png"],
     ["push-the-square", "https://nomocens.github.io/station-selection-6/push-the-square/index.html", "https://nomocens.github.io/station-selection-6/push-the-square/thumbnail.png"],
     ["push-your-luck", "https://nomocens.github.io/station-selection-6/push-your-luck/index.html", "https://nomocens.github.io/station-selection-6/push-your-luck/thumbnail.png"],
     ["retro-bowl", "https://nomocens.github.io/station-selection-6/retro-bowl/index.html", "https://nomocens.github.io/station-selection-6/retro-bowl/thumbnail.png"],
@@ -184,5 +182,11 @@
     ["Astroid (S2)", "https://googleyboogley-gjci0jgar-newfies-projects.vercel.app/", "https://nomocens.github.io/station-selection-9/astroid-thumbnail.png"],
     ["Astroid (S3)", "https://nomore-cens-please-gnh841zwy-newfies-projects.vercel.app/", "https://nomocens.github.io/station-selection-9/astroid-thumbnail.png"],
     ["Astroid (S4)", "https://nomore-cens-please.vercel.app/", "https://nomocens.github.io/station-selection-9/astroid-thumbnail.png"],
-    ["Handshakes", "https://nomocens.github.io/station-selection-10/Handshakes/index.html", "https://nomocens.github.io/station-selection-10/Handshakes/thumbnail.png"]
+    ["Astroid (S5.1)", "https://learning-1uo.pages.dev/", "https://nomocens.github.io/station-selection-9/astroid-thumbnail.png"],
+    ["Astroid (S5.2)", "https://doit.anticens.xyz/", "https://nomocens.github.io/station-selection-9/astroid-thumbnail.png"],
+    ["Astroid (S5.3)", "https://doesit.anticens.xyz/", "https://nomocens.github.io/station-selection-9/astroid-thumbnail.png"],
+    ["Astroid (S5.4)", "https://unodoit.anticens.xyz/", "https://nomocens.github.io/station-selection-9/astroid-thumbnail.png"],
+    ["[BROKEN:AB] Precision", "https://nomocens.github.io/station-selection-6/precision-client/index.html", "https://nomocens.github.io/station-selection-6/precision-client/thumbnail.png"],
+    ["[BROKEN:AB] MC18", "https://nomocens.github.io/station-selection-5/MC18/index.html", "https://nomocens.github.io/station-selection-5/MC18/thumbnail.png"],
+    ["[BROKEN:AB] MC152", "https://nomocens.github.io/station-selection-5/MC152/index.html", "https://nomocens.github.io/station-selection-5/MC152/thumbnail.png"]
 ]
