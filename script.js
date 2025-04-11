@@ -210,20 +210,24 @@ const loada = document.getElementById("loada");
 const params = new URLSearchParams(window.location.search);
 const loadstring = params.get("load");
 
-if (loada){
-    loada.innerHTML = `
-    <div style='width:640px;height:480px;max-width:100%'>
-        <div id='activity'></div>
-    </div>
+const report = document.getElementById('colorSelect');
+if (report){
+    alert('h')
+    fetch("data.json")
+        .then(response => response.json())
+        .then(data => {
+            data.forEach(item => {
+                const [appName, appDirectory, logo] = item;
 
-    <script type='text/javascript'>
-    EJS_player = '#activity';
-    
-        EJS_core = "snes";
-        EJS_pathtodata = "loaderdata/";
-        EJS_gameUrl = "2020.zip";
-</script>
-<script src='loaderdata/loader.js'></script>
-    `
+
+                const reportOption = document.createElement("option");
+                reportOption.textContent = appName;
+                reportOption.setAttribute("value", appName);
+
+                report.appendChild(reportOption);
+
+            });
+        })
+        .catch(error => console.error("Error loading JSON:", error));
 }
 });
