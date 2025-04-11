@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
                 if (loc === "I0ZJWA=="){
                     alert('Right click to open this in a fixed version that seems to fix setting and other activities.');
-                }
+                }s
                 
                 else {
                     // Decode loc and navigate to the decoded URL
