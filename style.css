@@ -168,3 +168,8 @@ body {
     font-weight: bolder;
     text-align: center;
 }
+
+.creditset img {
+    display: inline;
+    width: 20%;
+}
