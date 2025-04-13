@@ -173,3 +173,18 @@ body {
     display: inline;
     width: 20%;
 }
+
+.important {
+    display: block;
+    text-align: center;
+    font-size: small;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#relaunch {
+    color: #bb2222;
+    text-decoration: underline;
+    
+}
